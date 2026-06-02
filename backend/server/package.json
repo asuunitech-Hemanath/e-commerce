@@ -1,0 +1,34 @@
+{
+  "name": "myshop-api",
+  "version": "1.0.0",
+  "description": "MyShop REST API with Express + MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "staging": "cross-env NODE_ENV=staging nodemon index.js",
+    "prod": "cross-env NODE_ENV=production node index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1048.0",
+    "@aws-sdk/s3-request-presigner": "^3.1048.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.5.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^2.1.1",
+    "mysql2": "^3.9.7",
+    "node-cron": "^4.2.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "nodemon": "^3.1.0"
+  }
+}
